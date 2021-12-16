@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #boxn{
+            height: 40px;
+            background: #2bb673;
+        }
+        .boxntext{
+            text-align: center;
+            width: 100px;
+            padding: 9px;
+            font-size: 17px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        #boxhtr{
+            font-family: 'Roboto', sans-serif;
+        }
+        .boxhtd1>img{
+            height: 75px;
+            margin-left: 30px;
+        }
+        .boxhtd2>img{
+            margin-left: 150px;
+            height: 40px;
+        }
+        .boxhtd3>img{
+            margin-left: 20px;
+            height: 40px;
+            margin-right: 0px;
+        }
+        .boxhtd4>img{
+            margin-left: 20px;
+            height: 40px;
+            margin-right: 100px;
+        }
+        .boxhtd5,.boxhtd6{
+            font-size: 13px;
+            color: rgb(83, 83, 83);
+        }
+        .boxhtd6{
+            height: 23px;
+            border-left: 1px solid gray;
+        }
+        #ntnh1{
+            width: 80px;
+            height: 23px;
+            font-size: 14px;
+            font-weight: bold;
+            background: #35619f;
+            color: white;
+            border: transparent;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        #ntnh2{
+            width: 80px;
+            height: 23px;
+            font-size: 14px;
+            font-weight: bold;
+            background: #696969;
+            color: white;
+            border: transparent;
+            border-radius: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        #box1{
+            height: 160px;
+            padding: 30px;
+            background: #f0f0f0;
+            font-family:'Roboto', sans-serif;
+        }
+        #t1,#t2{
+            font-size: 25px;
+            margin: 5px;
+            font-weight: normal; 
+            color:rgb(78, 78, 78) ;
+        }
+        #t1{
+            padding-right: 20px;
+        }
+        #t2{
+            height: 25px;
+            border-left: 3px solid gray;
+            padding-left: 30px;
+            color: gray;
+        }
+        #b1{
+            margin-left: 280px;
+            border-radius: 20px;
+            width: 80px;
+            height: 20px;
+            border: 0px;
+            color: white;
+        }
+        #b2{
+            font-size: 15px;
+            margin-left: 35px;
+            border-radius: 5px;
+            width: 70px;
+            height: 20px;
+            background: #35619f;
+            color: white;
+            border: 0px;
+        }
+        .t3{
+            font-size: 15px;
+        }
+        .c1{
+            height: 35px;
+            border: transparent;
+            border-radius: 5px;
+        }
+        #sea1{
+            width: 350px;
+        }
+        #sel1{
+            margin-left: 40px;
+            width: 140px;
+            background: white;
+        }
+        #b3{
+            margin-left: 40px;
+            width: 170px;
+            background: #f53838;
+            color: white;
+            font-weight: bold;
+        }
+        #b3:hover{
+            background: #b32020 ;
+        }
+        #b4{
+            margin-left: 130px;
+            width: 170px;
+            background: #4bcd87;
+            color: white;
+            font-weight: bold;
+        }
+        #b4:hover{
+            background: #218851 ;
+        }
+        #box2{
+            margin: 40px 30px;
+            display: grid;
+            grid-template-columns: repeat(6, 14%);
+            justify-content: space-around;
+            grid-gap: 10px 0px;
+        }
+        #box2>button{
+            height: 36px;
+            border-radius: 5px;
+            border: transparent;
+            background: #f8f8f8;
+            color: rgb(100, 99, 99) ;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        #box2>button:hover{
+            background:#e0dfdf ;
+        }
+        #box2>button:nth-child(1){
+            background:#4bcd87 ;
+            color: white;
+        }
+        #box4{
+            margin: 20px 30px;
+        }
+        #box4>img{
+            width: 100%;
+        }
+        #box3{
+            margin: 20px 30px;
+        }
+        .box31{
+            margin-bottom: 10px;
+        }
+        .box31>p{
+            font-family: Roboto;
+            font-size: 15px;
+            margin-right: 8px;
+            display: inline;
+            color: #1877f2;
+        }
+        .box31>p:nth-child(2){
+            color: rgb(48, 47, 47);
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        .box31>p:nth-child(1){
+            color: rgb(48, 47, 47);
+        }
+        .box31>button{
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            margin-left: 70%;
+            height: 30px;
+            border-radius: 5px;
+            border: 0px;
+        }
+        .box32{
+            margin-top: 20px;
+            margin: 10px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 20px;
+            font-family: Roboto;
+        }
+        .box32>div{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+        .bg1{
+            height: 72%;
+            background-image: url("https://www.kindmeal.my/photos/recipe/1000/1000009-19416-l.jpg");
+            background-size: cover;
+            text-align: center; 
+            
+        }
+        .bg12{
+            height: 86.2%;
+        }
+        .bg13 {
+            cursor: pointer;
+            font-size: 20px;
+            line-height: 25px;
+            font-weight: normal;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            box-sizing: border-box;
+            padding: 5px 10px 5px 10px;
+        }
+        .box321{
+            height: 360px;
+            width: 340px;
+            border-radius: 10px;
+        }
+        .box3211{
+            height: 14%;
+            display: flex;
+            padding: 2px;
+            
+        }
+        .box3211>button{
+            height: 35px;
+            width: 70px;
+            margin-top: 3%;
+            margin-left: 25%;
+            background: #f53838;
+            border: 0px;
+            border-radius: 5px;
+            color: white;
+        }
+        .box3211>p{
+            margin-left: 8%;
+            font-size: 16px;
+            color: gray;
+        }
+        .box3211>img{
+            height: 50px;
+            border-radius: 50%;
+        }
+        .box3213{
+            display: flex;
+            padding: 5px;
+        }
+        .box3213>p{
+            font-size: 15px;
+            margin-right: 80px;
+            margin-left: 10px;
+            color: gray;
+        }
+        
+        .box3213>img{
+            margin-top: 11px;
+            height: 20px;
+        }
+        .box3213>img:nth-child(2){
+            margin-left: 20px;
+        }
+        #box5{
+            margin: 20px 30px;
+            margin-bottom: 30px;
+        }
+        #box6{
+            background: #2bb673;
+            height: 300px;
+            padding: 30px 100px;
+
+        }
+        .td1{
+            width: 180px;
+            line-height: 16px;
+        }
+        .footertext1{
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+        }
+        .footertext{
+            text-decoration: none;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px;
+        }
+        .t5{
+            width: 80%;
+            margin: auto;
+            margin-top: 40px;
+            text-align: center;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="boxh">
+        <table>
+            <tr id="boxhtr">
+                <td class="boxhtd1"><img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt=""></td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="boxhtd2">
+                                <img src="https://www.kindmeal.my/images/follow_blog_grey.png" alt="">
+                            </td>
+                            <td class="boxhtd3">
+                                <img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt="">
+                            </td>
+                            <td class="boxhtd4">
+                                <img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt="">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="boxhtd5">Log in</td>
+                            <td ><button id="ntnh1">Facebook</button></td>
+                            <td ><button id="ntnh2">Email</button></td>
+                            <td class="boxhtd6">Sign Up</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="boxn">
+        <table>
+            <tr>
+                <td class="boxntext">
+                    Home
+                </td>
+                <td class="boxntext">
+                    Mead Deals
+                </td>
+                <td class="boxntext">
+                    KindMoments
+                </td>
+                <td class="boxntext">
+                    Hot Picks
+                </td>
+                <td class="boxntext">
+                    Recipes
+                </td>
+                <td class="boxntext">
+                   Directory
+                </td>
+                <td class="boxntext">
+                    Articles
+                </td>
+                <td class="boxntext">
+                    Digi Rewards
+                </td>
+                <td class="boxntext">
+                    Help
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="box1">
+        <table>
+            <tr>
+                <table>
+                    <tr>
+                        <td>
+                            <h3 id="t1">Food & Drinks</h3>
+                        </td>
+                        <td>
+                            <h3 id="t2">Yummy Meat-Free Recipes</h3>
+                        </td>
+                        <td>
+                            <iframe id="b1" src="https://platform.twitter.com/widgets/tweet_button.html?size=2&url=http%3A%2F%2FKindMeal.my%2FMayNg&counturl=https%3A%2F%2Fwww.kindmeal.my%2FMayNg&text=May%20Ng%20from%20Singapore%2C%20Singapore" frameborder="0"></iframe>
+                        </td>
+                        <td>
+                            <button id="b2">Like 5</button>
+                        </td>
+                    </tr>
+                </table>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t3">Want to craft your own creative meat-free meals? Get inspiration from other food lovers, or share your own masterpieces!</p>
+                    <p class="t3">ransform into a master chef now.</p>
+                </td>
+            </tr>
+            <tr>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="sea1" class="c1" type="search" placeholder="Search Recipe or User Name">
+                        </td>
+                        <td>
+                            <select class="c1"  id="sel1">
+                                <option value="All Category">All Category</option>
+                            </select>
+                        </td>
+                        <td>
+                            <button class="c1" id="b3">Search Recipes</button>
+                        </td>
+                        <td>
+                            <button class="c1" id="b4">Search My Recipe</button>
+                        </td>
+                    </tr>
+                </table>
+            </tr>
+        </table>
+    </div>
+    <div id="box2">
+        <button>All Category</button>
+        <button>Appetizers</button>
+        <button>Beverages</button>
+        <button>breakfast</button>
+        <button>Breads</button>
+        <button>Condiments</button>
+        <button>Desserts</button>
+        <button>Snacks</button>
+        <button>Salads</button>
+        <button>Main Dishes</button>
+        <button>Condiments</button>
+        <button>Soups</button>
+    </div>
+    <div id="box3">
+        <div class="box31">
+            <p>Page:</p>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <button>Next>></button>
+        </div>
+        <div class="box32">
+            <div class="box321">
+                <div class="box3211">
+                    <img src="https://www.kindmeal.my/photos/member/0/6-s.jpg" alt="product">
+                    <p>KindMealChef</p>
+                    <button>view</button>
+                </div>
+                <div class="bg1">
+                    <div class="bg12"></div>
+                    <div class="bg13">Baked Omlete Roll</div>
+                </div>
+                <div class="box3213">
+                    <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="icon1">
+                    <p class="t4">30min</p>
+                    <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="icon1">
+                    <p>0</p>
+                    <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="icon1">
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="box321">
+                <div class="box3211">
+                    <img src="https://www.kindmeal.my/photos/member/0/6-s.jpg" alt="product">
+                    <p>KindMealChef</p>
+                    <button>view</button>
+                </div>
+                <div class="bg1">
+                    <div class="bg12"></div>
+                    <div class="bg13">Baked Omlete Roll</div>
+                </div>
+                <div class="box3213">
+                    <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="icon1">
+                    <p class="t4">30min</p>
+                    <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="icon1">
+                    <p>0</p>
+                    <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="icon1">
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="box321">
+                <div class="box3211">
+                    <img src="https://www.kindmeal.my/photos/member/0/6-s.jpg" alt="product">
+                    <p>KindMealChef</p>
+                    <button>view</button>
+                </div>
+                <div class="bg1">
+                    <div class="bg12"></div>
+                    <div class="bg13">Baked Omlete Roll</div>
+                </div>
+                <div class="box3213">
+                    <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="icon1">
+                    <p class="t4">30min</p>
+                    <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="icon1">
+                    <p>0</p>
+                    <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="icon1">
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="box321">
+                <div class="box3211">
+                    <img src="https://www.kindmeal.my/photos/member/0/6-s.jpg" alt="product">
+                    <p>KindMealChef</p>
+                    <button>view</button>
+                </div>
+                <div class="bg1">
+                    <div class="bg12"></div>
+                    <div class="bg13">Baked Omlete Roll</div>
+                </div>
+                <div class="box3213">
+                    <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="icon1">
+                    <p class="t4">30min</p>
+                    <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="icon1">
+                    <p>0</p>
+                    <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="icon1">
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="box321">
+                <div class="box3211">
+                    <img src="https://www.kindmeal.my/photos/member/0/6-s.jpg" alt="product">
+                    <p>KindMealChef</p>
+                    <button>view</button>
+                </div>
+                <div class="bg1">
+                    <div class="bg12"></div>
+                    <div class="bg13">Baked Omlete Roll</div>
+                </div>
+                <div class="box3213">
+                    <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="icon1">
+                    <p class="t4">30min</p>
+                    <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="icon1">
+                    <p>0</p>
+                    <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="icon1">
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="box321">
+                <div class="box3211">
+                    <img src="https://www.kindmeal.my/photos/member/0/6-s.jpg" alt="product">
+                    <p>KindMealChef</p>
+                    <button>view</button>
+                </div>
+                <div class="bg1">
+                    <div class="bg12"></div>
+                    <div class="bg13">Baked Omlete Roll</div>
+                </div>
+                <div class="box3213">
+                    <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="icon1">
+                    <p class="t4">30min</p>
+                    <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="icon1">
+                    <p>0</p>
+                    <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="icon1">
+                    <p>0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="box4">
+        <img id="img1" src="https://www.kindmeal.my/images/ads/banner_advertising-1100x280.png" alt="Add">
+    </div>
+    <div id="box5">
+        <div class="box32">
+            <div class="box321">
+                <div class="box3211">
+                    <img src="https://www.kindmeal.my/photos/member/0/6-s.jpg" alt="product">
+                    <p>KindMealChef</p>
+                    <button>view</button>
+                </div>
+                <div class="bg1">
+                    <div class="bg12"></div>
+                    <div class="bg13">Baked Omlete Roll</div>
+                </div>
+                <div class="box3213">
+                    <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="icon1">
+                    <p class="t4">30min</p>
+                    <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="icon1">
+                    <p>0</p>
+                    <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="icon1">
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="box321">
+                <div class="box3211">
+                    <img src="https://www.kindmeal.my/photos/member/0/6-s.jpg" alt="product">
+                    <p>KindMealChef</p>
+                    <button>view</button>
+                </div>
+                <div class="bg1">
+                    <div class="bg12"></div>
+                    <div class="bg13">Baked Omlete Roll</div>
+                </div>
+                <div class="box3213">
+                    <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="icon1">
+                    <p class="t4">30min</p>
+                    <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="icon1">
+                    <p>0</p>
+                    <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="icon1">
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="box321">
+                <div class="box3211">
+                    <img src="https://www.kindmeal.my/photos/member/0/6-s.jpg" alt="product">
+                    <p>KindMealChef</p>
+                    <button>view</button>
+                </div>
+                <div class="bg1">
+                    <div class="bg12"></div>
+                    <div class="bg13">Baked Omlete Roll</div>
+                </div>
+                <div class="box3213">
+                    <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="icon1">
+                    <p class="t4">30min</p>
+                    <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="icon1">
+                    <p>0</p>
+                    <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="icon1">
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="box321">
+                <div class="box3211">
+                    <img src="https://www.kindmeal.my/photos/member/0/6-s.jpg" alt="product">
+                    <p>KindMealChef</p>
+                    <button>view</button>
+                </div>
+                <div class="bg1">
+                    <div class="bg12"></div>
+                    <div class="bg13">Baked Omlete Roll</div>
+                </div>
+                <div class="box3213">
+                    <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="icon1">
+                    <p class="t4">30min</p>
+                    <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="icon1">
+                    <p>0</p>
+                    <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="icon1">
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="box321">
+                <div class="box3211">
+                    <img src="https://www.kindmeal.my/photos/member/0/6-s.jpg" alt="product">
+                    <p>KindMealChef</p>
+                    <button>view</button>
+                </div>
+                <div class="bg1">
+                    <div class="bg12"></div>
+                    <div class="bg13">Baked Omlete Roll</div>
+                </div>
+                <div class="box3213">
+                    <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="icon1">
+                    <p class="t4">30min</p>
+                    <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="icon1">
+                    <p>0</p>
+                    <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="icon1">
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="box321">
+                <div class="box3211">
+                    <img src="https://www.kindmeal.my/photos/member/0/6-s.jpg" alt="product">
+                    <p>KindMealChef</p>
+                    <button>view</button>
+                </div>
+                <div class="bg1">
+                    <div class="bg12"></div>
+                    <div class="bg13">Baked Omlete Roll</div>
+                </div>
+                <div class="box3213">
+                    <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="icon1">
+                    <p class="t4">30min</p>
+                    <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="icon1">
+                    <p>0</p>
+                    <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="icon1">
+                    <p>0</p>
+                </div>
+            </div>
+        </div>
+        <div class="box31">
+            <p>Page:</p>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <button>Next>></button>
+        </div>
+    </div>
+    <div id="box6">
+        <table>
+            <tr>
+                <td class="td1">
+                    <b class="footertext1">General</b><br>
+                    <a href="https://www.kindmeal.my" class="footertext">Home</a><br>
+                    <a href="" class="footertext">Sign Up</a><br>
+                    <a href="" class="footertext">Businesses / Restaurateurs</a><br>
+                    <a href="" class="footertext">Advertising</a><br>
+                    <a href="" class="footertext">About KindMeal.my</a><br>
+                    <a href="" class="footertext">Help & FAQ</a><br>
+                    <a href="" class="footertext">Terms & Conditions</a><br>
+                    <a href="" class="footertext">Inspiring Partners</a><br>
+                    <a href="" class="footertext">Lifestyle Ambassadors</a><br>
+                    <a href="" class="footertext">Jobs & Careers</a><br>
+                    <a href="" class="footertext">Contact Us</a><br>
+                </td>
+                <td class="td1">
+                    <b class="footertext1">Features</b><br>
+                    <a href="https://www.kindmeal.my" class="footertext">Home</a><br>
+                    <a href="" class="footertext">Sign Up</a><br>
+                    <a href="" class="footertext">Businesses / Restaurateurs</a><br>
+                    <a href="" class="footertext">Advertising</a><br>
+                    <a href="" class="footertext">About KindMeal.my</a><br>
+                    <a href="" class="footertext">Help & FAQ</a><br>
+                    <a href="" class="footertext">Terms & Conditions</a><br>
+                    <a href="" class="footertext">Inspiring Partners</a><br>
+                    <a href="" class="footertext">Lifestyle Ambassadors</a><br>
+                    <a href="" class="footertext">Jobs & Careers</a><br>
+                    <a href="" class="footertext">Contact Us</a><br>
+                </td>
+                <td class="td1">
+                    <b class="footertext1">Social Media</b><br>
+                    <a href="https://www.kindmeal.my" class="footertext">Home</a><br>
+                    <a href="" class="footertext">Sign Up</a><br>
+                    <a href="" class="footertext">Businesses / Restaurateurs</a><br>
+                    <a href="" class="footertext">Advertising</a><br>
+                    <a href="" class="footertext">About KindMeal.my</a><br>
+                    <a href="" class="footertext">Help & FAQ</a><br>
+                    <a href="" class="footertext">Terms & Conditions</a><br>
+                    <a href="" class="footertext">Inspiring Partners</a><br>
+                    <a href="" class="footertext">Lifestyle Ambassadors</a><br>
+                    <a href="" class="footertext">Jobs & Careers</a><br>
+                    <a href="" class="footertext">Contact Us</a><br>
+                </td>
+                <td class="td1">
+                    <b class="footertext1">Exciting Promos</b><br>
+                    <a href="https://www.kindmeal.my" class="footertext">Home</a><br>
+                    <a href="" class="footertext">Sign Up</a><br>
+                    <a href="" class="footertext">Businesses / Restaurateurs</a><br>
+                    <a href="" class="footertext">Advertising</a><br>
+                    <a href="" class="footertext">About KindMeal.my</a><br>
+                    <a href="" class="footertext">Help & FAQ</a><br>
+                    <a href="" class="footertext">Terms & Conditions</a><br>
+                    <a href="" class="footertext">Inspiring Partners</a><br>
+                    <a href="" class="footertext">Lifestyle Ambassadors</a><br>
+                    <a href="" class="footertext">Jobs & Careers</a><br>
+                    <a href="" class="footertext">Contact Us</a><br>
+                </td>
+                <td class="td1">
+                    <b class="footertext1">PetFinder.my</b><br>
+                    <a href="https://www.kindmeal.my" class="footertext">Home</a><br>
+                    <a href="" class="footertext">Sign Up</a><br>
+                    <a href="" class="footertext">Businesses / Restaurateurs</a><br>
+                    <a href="" class="footertext">Advertising</a><br>
+                    <a href="" class="footertext">About KindMeal.my</a><br>
+                    <a href="" class="footertext">Help & FAQ</a><br>
+                    <a href="" class="footertext">Terms & Conditions</a><br>
+                    <a href="" class="footertext">Inspiring Partners</a><br>
+                    <a href="" class="footertext">Lifestyle Ambassadors</a><br>
+                    <a href="" class="footertext">Jobs & Careers</a><br>
+                    <a href="" class="footertext">Contact Us</a><br>
+                </td>
+            </tr>
+        </table>
+        <div class="t5">
+            Copyright © KindMeal.my, 2014 - 2021. All rights reserved.
+            This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    // var data=[
+    //     {
+    //         logo: "https://www.kindmeal.my/photos/member/0/6-s.jpg",
+    //         category:"KindMealChef",
+    //         image:"https://www.kindmeal.my/photos/recipe/1000/1000009-19416-l.jpg",
+    //         name:"Baked Omlete Roll",
+    //         icon1:"https://www.kindmeal.my/images/icon_time_small.png",
+    //         icon2:"https://www.kindmeal.my/images/icon_heart_small.png",
+    //         icon3:"https://www.kindmeal.my/images/icon_commentbubble_small.png"
+    //     },{logo: "https://www.kindmeal.my/photos/member/0/6-s.jpg",
+    //         category:"KindMealChef",
+    //         image:"https://www.kindmeal.my/photos/recipe/1000/1000009-19416-l.jpg",
+    //         name:"Baked Omlete Roll",
+    //         icon1:"https://www.kindmeal.my/images/icon_time_small.png",
+    //         icon2:"https://www.kindmeal.my/images/icon_heart_small.png",
+    //         icon3:"https://www.kindmeal.my/images/icon_commentbubble_small.png"
+    //     },{logo: "https://www.kindmeal.my/photos/member/0/6-s.jpg",
+    //         category:"KindMealChef",
+    //         image:"https://www.kindmeal.my/photos/recipe/1000/1000009-19416-l.jpg",
+    //         name:"Baked Omlete Roll",
+    //         icon1:"https://www.kindmeal.my/images/icon_time_small.png",
+    //         icon2:"https://www.kindmeal.my/images/icon_heart_small.png",
+    //         icon3:"https://www.kindmeal.my/images/icon_commentbubble_small.png"
+    //     },{logo: "https://www.kindmeal.my/photos/member/0/6-s.jpg",
+    //         category:"KindMealChef",
+    //         image:"https://www.kindmeal.my/photos/recipe/1000/1000009-19416-l.jpg",
+    //         name:"Baked Omlete Roll",
+    //         icon1:"https://www.kindmeal.my/images/icon_time_small.png",
+    //         icon2:"https://www.kindmeal.my/images/icon_heart_small.png",
+    //         icon3:"https://www.kindmeal.my/images/icon_commentbubble_small.png"
+    //     },{logo: "https://www.kindmeal.my/photos/member/0/6-s.jpg",
+    //         category:"KindMealChef",
+    //         image:"https://www.kindmeal.my/photos/recipe/1000/1000009-19416-l.jpg",
+    //         name:"Baked Omlete Roll",
+    //         icon1:"https://www.kindmeal.my/images/icon_time_small.png",
+    //         icon2:"https://www.kindmeal.my/images/icon_heart_small.png",
+    //         icon3:"https://www.kindmeal.my/images/icon_commentbubble_small.png"
+    //     },{logo: "https://www.kindmeal.my/photos/member/0/6-s.jpg",
+    //         category:"KindMealChef",
+    //         image:"https://www.kindmeal.my/photos/recipe/1000/1000009-19416-l.jpg",
+    //         name:"Baked Omlete Roll",
+    //         icon1:"https://www.kindmeal.my/images/icon_time_small.png",
+    //         icon2:"https://www.kindmeal.my/images/icon_heart_small.png",
+    //         icon3:"https://www.kindmeal.my/images/icon_commentbubble_small.png"
+    //     }
+    // ];
+    // var div=document.querySelector(".box321")
+    // var temp=""
+    // data.map(function(el){
+    //     temp+=`<div class="box3211">
+    //                 <img src=${el.logo} alt="product">
+    //                 <p>${el.category}</p>
+    //                 <button>View</button>
+    //             </div>
+    //             <div class="bg1">
+    //                 <div class="bg12"></div>
+    //                 <div class="bg13">${el.name}</div>
+    //             </div>
+    //             <div class="box3213">
+    //                 <img src=${el.icon1} alt="icon1">
+    //                 <p class="t4">30min</p>
+    //                 <img src=${el.icon2} alt="icon1">
+    //                 <p>0</p>
+    //                 <img src=${el.icon3}>
+    //                 <p>0</p>
+    //             </div>`
+    // })
+    // div.innerHTML=temp
+    // document.querySelector(".box32").append(temp)
+    
+</script>
+
+
+
+<!-- // data.map(function(elem){
+    //     var div1=document.createElement("div")
+    //     var div2=document.createElement("div")
+    //     div2.setAttribute("class", "topb")
+    //     var div3=document.createElement("div")
+    //     div3.setAttribute("class", "middleb")
+    //     var div4=document.createElement("div")
+    //     div4.setAttribute("class", "bottomb")
+    //     var img1=document.createElement("img")
+    //     img1.setAttribute("src",elem.logo);
+    //     var p1=document.createElement("p")
+    //     p1.textContent=elem.category;
+    //     var btn=document.createElement("button")
+    //     btn.textContent="View";
+    //     var div5=document.createElement("div")
+    //     div5.setAttribute("background-image",elem.image)
+    //     img2.setAttribute("url", elem.image)
+    //     var h4=document.createElement("h4")
+    //     h4.textContent=elem.name;
+    //     var img3=document.createElement("img")
+    //     img3.setAttribute("src",elem.icon1)
+    //     var p2=document.createElement("p")
+    //     p2.textContent="30 Min"
+    //     var img4=document.createElement("img")
+    //     img4.setAttribute("src",elem.icon2)
+    //     var p3=document.createElement("p")
+    //     p2.textContent="0"
+    //     var img5=document.createElement("img")
+    //     img5.setAttribute("src",elem.icon3)
+    //     var p4=document.createElement("p")
+    //     p2.textContent="5"
+    //     div2.append(img1,p1,btn)
+    //     div3.append(div5,h4)
+    //     div4.append(img3,p2,img4,p3,img5,p4)
+    //     div1.append(div2,div3,div4)
+    //     document.querySelector("#box32").append(div1)
+    // }) -->
