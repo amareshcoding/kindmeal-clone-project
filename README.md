@@ -1,9 +1,7 @@
 # kindmeal-clone-project
-# healthkart-clone-project-1.0
-
 
      
-<p >HealthKart.com is India’s largest online health & fitness store for men and women. Shop online from the latest collections of health, fitness and similar products featuring the best brands.</p>
+<p >Kindmeal.my is The World's 1st Meat-Free Lifestyle Platform.</p>
 <h2 >Tech Stack :</h2>
 
 <p >The tech Stack we used for creating this website are :-</p>
@@ -22,20 +20,9 @@ In our website, we tried our best to clone same as original website.</p>
 <h2 >Menu Section :</h2>
 <p >We have added Menu section on the top-left corner and below the navbar, if you click on the menu it will show the categories and subcategories of that section.</p>
 
-<h2 >Product Page :</h2>
-<p >We have added products from original website and categorized them into different section. User also can sort the products.</p>
-
-<h2 >Cart Section :</h2>
-<p >When we add some products using Add to Cart button, the products you have chosen, will showcase into the Cart Section. User can remove the product from the cart.</p>
-
 <h2 >Login and Create Account :</h2>
 <p >User can Create Account and also Login to the account. We used some JavaScript for Sign-up and Login Functionalities.</p>
 
-<h2 >Payment Page :</h2>
-<p >We have added different payment methods, users can choose according to there preference, and after selecting any method it will redirect users to final payment page.</p>
-
-<h2 >Order or Past-Purchase Section :</h2>
-<p>The user can see an order successful message.</p>
 
 <h2>Contributors :</h2>
 <ul >
@@ -43,16 +30,13 @@ In our website, we tried our best to clone same as original website.</p>
           <p >Amaresh Barik : <a href="https://github.com/amareshcoding">https://github.com/amareshcoding</a></p>
      </li>
      <li>
-          <p >Prakash Vanture : <a href="https://github.com/webdev1903">https://github.com/webdev1903</a></p>
+          <p >Rammana Bandapu</p>
      </li>
      <li>
-          <p >Birendra Gupta : <a href="https://github.com/birendra20">https://github.com/birendra20</a></p>
+          <p >Bandhan Jayashing</p>
      </li>
      <li>
-          <p >Vishal Vivare :</p>
-     </li>
-     <li>
-          <p>Ramesh Gudivada :</p>
+          <p >Mukesh Chuhan</p>
      </li>
 </ul>
 <h2 >Our blog link :</h2>
