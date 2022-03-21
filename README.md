@@ -33,20 +33,17 @@ User can Create Account and also Login to the account. We used some JavaScript f
 <img src="https://miro.medium.com/max/1400/1*Og5RlgRphf8zknRylpV_rQ.png"></img>
 
 <h2>Contributors :</h2>
-<ul >
-     <li>
-          <p >Amaresh Barik : <a href="https://github.com/amareshcoding">https://github.com/amareshcoding</a></p>
-     </li>
-     <li>
-          <p >Rammana Bandapu</p>
-     </li>
-     <li>
-          <p >Bandhan Jayashing</p>
-     </li>
-     <li>
-          <p >Mukesh Chuhan</p>
-     </li>
-</ul>
+
+ <p >Amaresh Barik : <a href="https://github.com/amareshcoding">https://github.com/amareshcoding</a></p>
+
+ <p >Rammana Bandapu</p>
+
+ <p >Bandhan Jayashing</p>
+
+ <p >Mukesh Chuhan</p>
+ 
+  <p >Sai Narasimha</p>
+
 <h2 >Our blog link :</h2>
 <p >
      <a rel="noreferrer" target="_blank" href="https://medium.com/@amaresh.acb/kindmeal-my-clone-project-presentation-fe92196d94fc" rel="nofollow">https://medium.com/@amaresh.acb/kindmeal-my-clone-project-presentation-fe92196d94fc</a>
